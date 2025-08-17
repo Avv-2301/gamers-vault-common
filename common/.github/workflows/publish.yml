@@ -1,0 +1,36 @@
+name: Publish Common Package
+
+on:
+  push:
+    branches:
+      - master  
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the repo
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Setup Node.js with GitHub Packages
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          registry-url: "https://npm.pkg.github.com"
+
+      # Install dependencies (if any)
+      - name: Install dependencies
+        run: npm install
+
+      # Bump version automatically
+      - name: Bump version
+        run: npm version patch --no-git-tag-version
+
+      # Publish to GitHub Packages
+      - name: Publish package
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
