@@ -1,9 +1,13 @@
 {
   "name": "@avv-2301/gamers-vault-common",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "description": "Shared constants, response handler, and service caller for Gamer's Vault microservices",
-  "keywords": ["microservices", "common", "gamer-vault"],
+  "keywords": [
+    "microservices",
+    "common",
+    "gamer-vault"
+  ],
   "author": "Your Name",
   "license": "UNLICENSED",
   "repository": {
