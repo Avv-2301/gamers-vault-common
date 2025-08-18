@@ -3,7 +3,7 @@ name: Publish Common Package
 on:
   push:
     branches:
-      - main  
+      - main
 
 jobs:
   publish:
@@ -23,7 +23,13 @@ jobs:
         run: npm install
 
       - name: Bump version
-        run: npm version patch --no-git-tag-version
+        run: |
+          npm version patch --no-git-tag-version
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add package.json package-lock.json
+          git commit -m "ci: bump version [skip ci]" || echo "No changes to commit"
+          git push
 
       - name: Publish package
         run: npm publish
