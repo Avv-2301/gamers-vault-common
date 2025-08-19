@@ -4,8 +4,7 @@
   "files": [
     "dist"
   ],
-
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "index.js",
   "description": "Shared constants, response handler, and service caller for Gamer's Vault microservices",
   "keywords": [
