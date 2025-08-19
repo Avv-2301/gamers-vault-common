@@ -5,7 +5,7 @@
   "files": [
     "dist"
   ],
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Shared constants, response handler, and service caller for Gamer's Vault microservices",
   "keywords": [
     "microservices",
