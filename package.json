@@ -1,11 +1,11 @@
 {
   "name": "@avv-2301/gamers-vault-common",
+  "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
   "version": "1.0.3",
-  "main": "index.js",
   "description": "Shared constants, response handler, and service caller for Gamer's Vault microservices",
   "keywords": [
     "microservices",
@@ -20,7 +20,7 @@
   },
   "scripts": {
     "build": "tsc",
-    "clean": "rimraf dist",
+    "clean": "npx rimraf dist",
     "prepublishOnly": "npm run clean && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
