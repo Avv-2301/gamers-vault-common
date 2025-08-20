@@ -1,9 +1,9 @@
 import axios, { Method } from "axios";
 
 const SERVICE_URLS: Record<string, string> = {
-  user: process.env.USER_SERVICE_URL || "http://localhost:4001",
-  profile: process.env.PROFILE_SERVICE_URL || "http://localhost:4002",
-  // library: process.env.LIBRARY_SERVICE_URL || "http://localhost:4003",
+  users: process.env.USER_SERVICE_URL || "http://localhost:3000/users",
+  profiles: process.env.PROFILE_SERVICE_URL || "http://localhost:3000/profiles",
+  // library: process.env.LIBRARY_SERVICE_URL || "http://localhost:3000",
 };
 
 /**
