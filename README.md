@@ -26,3 +26,29 @@ npm install @avv-2301/gamers-vault-common@1.0.6
 
 Importing Functions and Constants
 import { callService, RESPONSE_FORMAT, CONSTANTS } from '@avv-2301/gamers-vault-common';
+
+
+Using Constants
+import { CONSTANTS } from '@avv-2301/gamers-vault-common';
+console.log(CONSTANTS.DEFAULT_PAGE_SIZE);
+
+
+Function Signature
+export async function callService(
+  serviceName: string,
+  endpoint: string,
+  data: any = {},
+  headers: Record<string, string> = {},
+  method: Method = "POST"
+): Promise<any>
+
+
+import { callService } from '@avv-2301/gamers-vault-common';
+
+  const response = await callService(
+      'UserService',       // serviceName
+      `/getUser/${userId}`,// endpoint
+      {},                  // data (optional)
+      { Authorization: 'Bearer TOKEN' }, // headers (optional)
+      'GET'                // method (optional, defaults to POST)
+    );
