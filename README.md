@@ -1,6 +1,5 @@
 # 🎮 Gamers Vault Common
 
-[![npm version](https://img.shields.io/npm/v/@avv-2301/gamers-vault-common?color=blue)](1.0.11)
 [![TypeScript](https://img.shields.io/badge/TypeScript-4.9-blue?logo=typescript)](https://www.typescriptlang.org/)
 
 `Gamers Vault Common` is a TypeScript utility package containing shared files and functions for multiple services. It helps maintain consistency across your projects by providing constants, service-calling utilities, and standardized response formats.
