@@ -22,17 +22,20 @@ Install via npm:
 
 ```bash
 npm install @avv-2301/gamers-vault-common@1.0.6
+```
 
-
+```bash
 Importing Functions and Constants
 import { callService, RESPONSE_FORMAT, CONSTANTS } from '@avv-2301/gamers-vault-common';
+```
 
-
+```bash
 Using Constants
 import { CONSTANTS } from '@avv-2301/gamers-vault-common';
 console.log(CONSTANTS.DEFAULT_PAGE_SIZE);
+```
 
-
+```bash
 Function Signature
 export async function callService(
   serviceName: string,
@@ -41,8 +44,10 @@ export async function callService(
   headers: Record<string, string> = {},
   method: Method = "POST"
 ): Promise<any>
+```
 
 
+```bash
 import { callService } from '@avv-2301/gamers-vault-common';
 
   const response = await callService(
@@ -52,3 +57,4 @@ import { callService } from '@avv-2301/gamers-vault-common';
       { Authorization: 'Bearer TOKEN' }, // headers (optional)
       'GET'                // method (optional, defaults to POST)
     );
+```
