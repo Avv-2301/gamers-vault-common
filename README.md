@@ -24,19 +24,21 @@ Install via npm:
 npm install @avv-2301/gamers-vault-common@1.0.6
 ```
 
-```bash
 Importing Functions and Constants
+```bash
 import { callService, RESPONSE_FORMAT, CONSTANTS } from '@avv-2301/gamers-vault-common';
 ```
 
-```bash
+
 Using Constants
+```bash
 import { CONSTANTS } from '@avv-2301/gamers-vault-common';
 console.log(CONSTANTS.DEFAULT_PAGE_SIZE);
 ```
 
-```bash
+
 Function Signature
+```bash
 export async function callService(
   serviceName: string,
   endpoint: string,
@@ -47,6 +49,7 @@ export async function callService(
 ```
 
 
+Importing CallService And Usage
 ```bash
 import { callService } from '@avv-2301/gamers-vault-common';
 
